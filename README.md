@@ -498,7 +498,7 @@ Through this project, I worked with:
 **Dabid Parveez Khan**
 
 GitHub:
-dabid //////////
+dabidparveezkhan33
 
 ---
 
