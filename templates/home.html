@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f9fc">
+  <meta name="description" content="Book your ride in seconds. Travel comfortably, safely, and reliably.">
+  <title>Ride Booking — Your Journey, Our Priority</title>
+  <style>
+    :root{--navy:#10243f;--teal:#118c7a;--teal-dark:#087968;--muted:#667990;--sky:#d9efff;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--navy);background:#f7f9fc;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #48b8ad;outline-offset:4px;border-radius:6px}.container{width:min(var(--max),calc(100% - 64px));margin:0 auto}
+    .header{height:84px;background:#fff;border-bottom:1px solid #e7edf3;position:relative;z-index:5}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:inline-flex;align-items:center;gap:13px;color:#1b2d45;text-decoration:none;font-weight:750;font-size:23px;letter-spacing:-.045em}.brand-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#108a78;color:#fff;box-shadow:0 5px 14px #0a88751c}.brand-icon svg{width:27px;height:27px}.menu{position:relative}.menu summary{list-style:none;cursor:pointer;width:54px;height:54px;display:grid;place-items:center;border:1px solid #e1e8ef;border-radius:15px;background:#fff;box-shadow:0 2px 5px #10243f08}.menu summary::-webkit-details-marker{display:none}.hamburger{width:19px;display:grid;gap:4px}.hamburger i{height:2px;border-radius:2px;background:#243b57}.menu[open] .hamburger i:first-child{transform:translateY(3px) rotate(45deg)}.menu[open] .hamburger i:last-child{transform:translateY(-3px) rotate(-45deg)}.menu[open] .hamburger i:nth-child(2){opacity:0}.hamburger i{transition:.18s}.menu-panel{position:absolute;right:0;top:64px;min-width:190px;padding:8px;border:1px solid #e4ebf2;border-radius:14px;background:#fff;box-shadow:0 16px 40px #1225401c}.menu-panel a{display:block;padding:11px 12px;border-radius:9px;text-decoration:none;color:#253c57;font-size:14px;font-weight:600}.menu-panel a:hover{background:#f1f7fb;color:var(--teal-dark)}
+    .hero{min-height:calc(100svh - 84px);padding:56px 0 50px;background:linear-gradient(150deg,#f1f8ff 0%,#e3f2ff 56%,#f4f8fd 100%);overflow:hidden}.hero-content{animation:enter .65s ease both}.intro{max-width:1000px;margin:0 auto 40px;text-align:left}.intro h1{margin:0 0 17px;color:var(--navy);font-size:clamp(42px,6.1vw,76px);font-weight:780;line-height:1.06;letter-spacing:-.065em}.intro p{margin:0 0 27px;color:var(--muted);font-size:clamp(17px,2vw,22px);line-height:1.55}.book-button{min-height:58px;display:inline-flex;align-items:center;justify-content:center;gap:11px;padding:0 31px;border-radius:999px;background:var(--teal);color:#fff;text-decoration:none;font-size:17px;font-weight:700;box-shadow:0 10px 22px #118c7a2b;transition:background .2s,transform .2s,box-shadow .2s}.book-button:hover{background:var(--teal-dark);transform:translateY(-2px);box-shadow:0 13px 26px #118c7a3b}.book-button svg{width:19px;height:19px}
+    .scene{position:relative;display:block;width:100%;aspect-ratio:1.66/1;min-height:300px;max-height:570px;overflow:hidden;border-radius:32px;background:#d8efff;box-shadow:0 22px 55px #17395d18;isolation:isolate}.scene svg{position:absolute;inset:0;width:100%;height:100%;display:block}.scene .sun{transform-origin:790px 150px;animation:sunrise 1s ease both}.scene .car{animation:drive-in .8s .12s cubic-bezier(.2,.8,.2,1) both}.scene .cloud{animation:cloud-drift 10s ease-in-out infinite alternate}
+    .below-note{margin:17px 0 0;text-align:center;color:#77889d;font-size:12px}.below-note a{color:#4c657f;text-underline-offset:3px}
+    @keyframes enter{from{opacity:0;transform:translateY(13px)}to{opacity:1;transform:translateY(0)}}@keyframes drive-in{from{opacity:0;transform:translateX(35px)}to{opacity:1;transform:translateX(0)}}@keyframes sunrise{from{opacity:.6;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes cloud-drift{to{transform:translateX(18px)}}
+    @media(min-width:1200px){.hero{padding-top:64px}.intro{margin-bottom:43px}}
+    @media(max-width:700px){.container{width:calc(100% - 36px)}.header{height:72px}.brand{font-size:20px;gap:10px}.brand-icon{width:42px;height:42px;border-radius:13px}.menu summary{width:48px;height:48px;border-radius:13px}.menu-panel{top:58px}.hero{min-height:calc(100svh - 72px);padding:42px 0 28px}.intro{margin-bottom:30px}.intro h1{font-size:clamp(39px,9vw,58px)}.intro p{font-size:17px;margin-bottom:23px}.book-button{min-height:54px;padding:0 25px;font-size:16px}.scene{aspect-ratio:1.08/1;min-height:0;border-radius:24px}.below-note{font-size:11px;margin-top:13px}}
+    @media(max-width:390px){.container{width:calc(100% - 28px)}.hero{padding-top:34px}.intro h1{font-size:38px}.intro p{font-size:15px}.scene{aspect-ratio:.96/1;border-radius:20px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Ride Booking home">
+        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 18.2 7.2 11a3 3 0 0 1 2.9-2.1h11.8a3 3 0 0 1 2.9 2.1l2.2 7.2v6.1H5v-6.1Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M5.5 18h21M9 13h14M9 24.5v2m14-2v2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="10" cy="21.5" r="1.2" fill="currentColor"/><circle cx="22" cy="21.5" r="1.2" fill="currentColor"/></svg></span>
+        <span>Taxi Ride Booking</span>
+      </a>
+      <details class="menu">
+        <summary aria-label="Open navigation menu"><span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span></summary>
+        <div class="menu-panel"><a href="/">Home</a><a href="">Contact</a></div>
+      </details>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <div class="intro">
+          <h1 id="hero-title">Your Journey, Our Priority.</h1>
+          <p>Book your ride in seconds. Travel comfortably, safely, and reliably.</p>
+          <a class="book-button" href="/book">Book a Ride <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="scene" role="img" aria-label="Illustration of a teal car traveling through a bright city">
+          <svg viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#d9f0ff"/><stop offset="1" stop-color="#c8e8ff"/></linearGradient>
+              <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9f7ff"/><stop offset="1" stop-color="#aad8f2"/></linearGradient>
+              <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#304661"/><stop offset="1" stop-color="#253950"/></linearGradient>
+              <filter id="car-shadow" x="-20%" y="-40%" width="140%" height="190%"><feGaussianBlur stdDeviation="13"/></filter>
+            </defs>
+            <path fill="url(#sky)" d="M0 0h1000v600H0z"/>
+            <circle class="sun" cx="790" cy="150" r="69" fill="#ffba4b"/>
+            <g class="cloud" fill="#fff" opacity=".96"><ellipse cx="230" cy="184" rx="87" ry="27"/><ellipse cx="204" cy="171" rx="44" ry="31"/><ellipse cx="251" cy="164" rx="42" ry="35"/><ellipse cx="656" cy="244" rx="61" ry="22"/><ellipse cx="633" cy="233" rx="31" ry="23"/><ellipse cx="672" cy="229" rx="32" ry="27"/></g>
+            <g opacity=".88">
+              <path fill="#acd3ed" d="M56 346h132v161H56z"/><path fill="#8dbbe0" d="M207 270h119v237H207z"/><path fill="#b9dbf1" d="M343 378h171v129H343z"/><path fill="#83b4db" d="M534 235h137v272H534z"/><path fill="#a7cfea" d="M690 321h111v186H690z"/><path fill="#8fbde0" d="M819 287h127v220H819z"/><path fill="#c0def2" d="M0 420h42v87H0z"/>
+              <g fill="#edf8ff"><path d="M226 296h17v18h-17zM280 346h17v18h-17zM554 264h18v18h-18zM609 316h18v18h-18zM839 313h18v18h-18zM109 369h15v16h-15z"/></g>
+              <g fill="#fff" opacity=".8"><path d="M225 327h4v9h-4zM286 376h4v9h-4zM560 294h4v9h-4zM614 348h4v9h-4zM844 343h4v9h-4z"/></g>
+            </g>
+            <path fill="#4d85ad" opacity=".36" d="M0 492h1000v21H0z"/>
+            <path fill="url(#road)" d="M0 506h1000v94H0z"/>
+            <path stroke="#fff" stroke-width="7" stroke-dasharray="70 45" opacity=".8" d="M0 562h1000"/>
+            <g class="car" transform="translate(0 0)">
+              <ellipse cx="510" cy="526" rx="203" ry="27" fill="#172a40" opacity=".25" filter="url(#car-shadow)"/>
+              <path d="m290 474 31-16 45-79c9-17 26-27 45-27h192c23 0 43 11 56 30l52 76 35 15c14 6 23 20 23 36v18H267v-22c0-14 9-26 23-31Z" fill="#118a79"/>
+              <path d="m387 388-39 68h113v-84h-51c-10 0-18 6-23 16ZM478 372v84h150l-44-65c-8-12-21-19-36-19h-70Z" fill="url(#glass)"/>
+              <path d="m475 370 7 3v83h-7z" fill="#0d7268"/>
+              <path d="M288 474h477v22H278v-4c0-9 4-15 10-18Z" fill="#08776a"/>
+              <path d="M300 472h28v10h-28z" rx="4" fill="#f4f8fc"/><path d="M733 477h29v13h-29z" rx="5" fill="#ffbd55"/>
+              <circle cx="366" cy="510" r="36" fill="#183047"/><circle cx="366" cy="510" r="19" fill="#d9eaf5"/><circle cx="366" cy="510" r="8" fill="#9ab6ca"/>
+              <circle cx="680" cy="510" r="36" fill="#183047"/><circle cx="680" cy="510" r="19" fill="#d9eaf5"/><circle cx="680" cy="510" r="8" fill="#9ab6ca"/>
+            </g>
+          </svg>
+        </div>
+        <p class="below-note">Simple, dependable rides when you need them. <a href="/book">Start a booking</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
